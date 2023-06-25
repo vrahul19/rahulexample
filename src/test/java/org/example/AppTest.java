@@ -1,16 +1,14 @@
 package org.example;
 
 import org.junit.jupiter.api.Assertions;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
-import static org.junit.Assert.assertEquals;
 
 public class AppTest {
     logic logic = new logic();
 
     @Test
-    public void MulTwoNumbers()
+    public void PositiveTest()
     {
         long expectedMul = 24;
         long actualMul = logic.mul(4,6);
@@ -18,7 +16,7 @@ public class AppTest {
     }
 
     @Test
-    public void MulTwoNumbersNeg()
+    public void NegativeTest()
     {
         long expectedMul = 23;
         long actualMul = logic.mul(4,6);

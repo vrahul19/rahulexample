@@ -1,14 +1,10 @@
 package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-//import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import org.springframework.stereotype.Service;
 @RestController
 @RequestMapping("/math")
 public class Multiply {
@@ -42,7 +38,7 @@ public class Multiply {
             return mul;
         }
 
-        public void setMum(long mul) {
+        public void setMul(long mul) {
             this.mul = mul;
         }
 
