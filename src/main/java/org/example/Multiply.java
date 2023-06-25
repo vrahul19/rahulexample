@@ -1,11 +1,11 @@
 package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import org.springframework.stereotype.Service;
@@ -30,20 +30,20 @@ public class Multiply {
     public static class Result {
         private long num1;
         private long num2;
-        private long sum;
+        private long mul;
 
-        public Result(long num1,long num2,long sum) {
+        public Result(long num1,long num2,long mul) {
             this.num1=num1;
             this.num2=num2;
-            this.sum = sum;
+            this.mul=mul;
         }
 
-        public long getSum() {
-            return sum;
+        public long getMul() {
+            return mul;
         }
 
-        public void setSum(long sum) {
-            this.sum = sum;
+        public void setMum(long mul) {
+            this.mul = mul;
         }
 
         public long getNum1() {
@@ -62,6 +62,5 @@ public class Multiply {
             this.num2 = num2;
         }
     }
-
     }
 
